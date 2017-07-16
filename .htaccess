@@ -1,0 +1,7 @@
+
+#Rewrite rule to serve content on a new non exiting url
+RewriteRule ^newUrl/$ /directory/subDirecoty/ [P]
+
+
+#301 redirect using .htaccess
+Redirect 301 /directory/subDirecoty/ /newUrl/
