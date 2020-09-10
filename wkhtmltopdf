@@ -1,0 +1,18 @@
+Steps to install Wkhtmltopdf 0.12.3 on Linux AWS EC2
+wkhtmltopdf and wkhtmltoimage are open source (LGPLv3) command line tools to render HTML into PDF and various image formats using the Qt WebKit rendering engine. These run entirely “headless” and do not require a display or display service.
+
+Here are the steps we need to be flollowed in order to install wkhtmltopdf.
+
+Login to your Linux instance using SSH Client as putty.
+
+
+cd ~
+wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+tar vxf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+cp wkhtmltox/bin/wk* /usr/local/bin/
+
+And you can confirm with:
+
+
+$ wkhtmltopdf --version
+wkhtmltopdf 0.12.3 (with patched qt)
